@@ -3,7 +3,16 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Azfar Bilal - AI Engineer</title>
+<title>Azfar Bilal | Computer Vision &amp; Edge AI Engineer</title>
+<meta name="description" content="Azfar Bilal: computer vision and edge AI engineer. Real-time detection, tracking and multi-camera systems optimized with TensorRT and CUDA, deployed on NVIDIA Jetson and AWS. Open to relocating to the US.">
+<meta name="author" content="Azfar Bilal">
+<link rel="canonical" href="https://azfar-950.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://azfar-950.github.io/">
+<meta property="og:title" content="Azfar Bilal | Computer Vision &amp; Edge AI Engineer">
+<meta property="og:description" content="Real-time detection, tracking and multi-camera systems, made fast enough to ship with TensorRT, CUDA, NVIDIA Jetson and AWS.">
+<meta property="og:image" content="https://azfar-950.github.io/pfp.jpg">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Cabinet+Grotesk:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
@@ -173,7 +182,7 @@
   }
   .btn-outline:hover { border-color: var(--accent2); color: var(--accent2); transform: translateY(-3px); }
 
-  /* Hero Right — Profile Card */
+  /* Hero Right: Profile Card */
   .hero-right {
     display: flex; justify-content: center; align-items: center;
     position: relative;
@@ -566,6 +575,33 @@
   .ticker-item::after { content:'◆'; color:var(--accent); font-size:.5rem; }
   @keyframes ticker { from{transform:translateX(0);} to{transform:translateX(-50%);} }
 
+  /* ── EXPERIENCE ── */
+  .exp-card {
+    display: grid; grid-template-columns: 220px 1fr; gap: 3rem;
+    padding: 3rem; margin-bottom: 1.5rem;
+    background: var(--surface); border: 1px solid var(--border);
+    position: relative; overflow: hidden;
+    transition: border-color .3s, background .3s;
+  }
+  .exp-card::before {
+    content:''; position:absolute; left:0; top:0; bottom:0; width:2px;
+    background: linear-gradient(180deg, var(--accent), var(--accent2));
+  }
+  .exp-card:hover { border-color: rgba(0,229,255,0.25); background: rgba(0,229,255,0.015); }
+  .exp-date { font-family:'DM Mono',monospace; font-size:.8rem; color:var(--accent); letter-spacing:.05em; }
+  .exp-place { font-family:'DM Mono',monospace; font-size:.72rem; color:var(--muted); margin-top:.5rem; }
+  .exp-role { font-family:'Syne',sans-serif; font-size:1.5rem; font-weight:700; letter-spacing:-.01em; }
+  .exp-company {
+    font-family:'DM Mono',monospace; font-size:.75rem; color:#a89fff;
+    margin:.5rem 0 1.6rem; text-transform:uppercase; letter-spacing:.18em;
+  }
+  .exp-list { list-style:none; display:flex; flex-direction:column; gap:.9rem; margin-bottom:1.8rem; }
+  .exp-list li { font-size:.92rem; line-height:1.7; color:var(--muted); padding-left:1.4rem; position:relative; }
+  .exp-list li::before { content:'▹'; position:absolute; left:0; color:var(--accent); }
+  .exp-list li strong { color:var(--text); font-weight:500; }
+
+  .nav-links a.nav-resume { color: var(--accent); }
+
   /* ── Mobile ── */
   @media(max-width:900px) {
     nav { padding:1.2rem 2rem; }
@@ -579,6 +615,11 @@
     .project-num { display:none; }
     .contact-cards { grid-template-columns:1fr; }
     footer { flex-direction:column; gap:1rem; text-align:center; }
+    .hero-title { font-size: clamp(2.2rem, 11.5vw, 4.5rem); }
+    .contact-title { font-size: clamp(1.6rem, 8.4vw, 3.5rem); }
+    .exp-card { grid-template-columns:1fr; gap:1.2rem; padding:2rem 1.6rem; }
+    .project-metric { text-align:left; }
+    .hero-stats { flex-wrap:wrap; gap:1.5rem; }
   }
 
   /* ── Active nav highlight ── */
@@ -597,9 +638,11 @@
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#capabilities">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="Azfar_Bilal_Resume.pdf" target="_blank" rel="noopener" class="nav-resume">Résumé ↗</a></li>
   </ul>
 </nav>
 
@@ -608,37 +651,37 @@
 <!-- ── HERO ── -->
 <section id="home">
   <div class="hero-left">
-    <div class="hero-eyebrow">AI Engineer & MLOps Specialist</div>
+    <div class="hero-eyebrow">Computer Vision &amp; Edge AI Engineer</div>
     <h1 class="hero-title">
       <span class="line"><span>Building</span></span>
-      <span class="line"><span class="accent-word glitch" data-text="Intelligent">Intelligent</span></span>
+      <span class="line"><span class="accent-word glitch" data-text="Vision">Vision</span></span>
       <span class="line"><span class="stroke-word">Systems</span></span>
-      <span class="line"><span>at Scale.</span></span>
+      <span class="line"><span>that Ship.</span></span>
     </h1>
     <p class="hero-desc">
-      I'm <strong style="color:var(--text)">Azfar Bilal</strong> , a CS student at FAST NUCES and AI Engineer at SOVAvis, turning cutting-edge research into production-grade computer vision, MLOps pipelines, and distributed systems that make businesses faster and smarter.
+      I'm <strong style="color:var(--text)">Azfar Bilal</strong>, an AI / Computer Vision Engineer at SovaVis and a 2026 Computer Science graduate of FAST NUCES. I build real-time detection, tracking and multi-camera systems, then make them fast enough to ship with TensorRT, custom CUDA kernels, NVIDIA Jetson and AWS.
     </p>
     <div class="hero-ctas">
-      <a href="#services" class="btn-primary">
-        <span>Explore Services</span>
+      <a href="#projects" class="btn-primary">
+        <span>View Projects</span>
         <span>→</span>
       </a>
-      <a href="#contact" class="btn-outline">
-        <span>Get In Touch</span>
+      <a href="Azfar_Bilal_Resume.pdf" target="_blank" rel="noopener" class="btn-outline">
+        <span>Download Résumé</span>
       </a>
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-num">45<span>+</span></div>
-        <div class="stat-label">FPS on Jetson Nano</div>
+        <div class="stat-num">100<span>+</span></div>
+        <div class="stat-label">FPS across 10-12 live feeds</div>
       </div>
       <div class="stat">
         <div class="stat-num">12<span>×</span></div>
         <div class="stat-label">CUDA Speedup</div>
       </div>
       <div class="stat">
-        <div class="stat-num">95<span>%</span></div>
-        <div class="stat-label">Object Recognition Accuracy</div>
+        <div class="stat-num">200<span>+</span></div>
+        <div class="stat-label">Users in Week One</div>
       </div>
     </div>
   </div>
@@ -648,11 +691,6 @@
       <div class="orbit-ring"><div class="orbit-dot"></div></div>
       <div class="orbit-ring-2"><div class="orbit-dot-2"></div></div>
       <div class="profile-img-wrap">
-        <!-- ══════════════════════════════════════════════
-             👆 PLACE YOUR PHOTO HERE
-             Replace the placeholder div below with:
-             <img src="pfp.jpg" alt="Azfar Bilal" />
-        ══════════════════════════════════════════════ -->
         <img src="pfp.jpg" alt="Azfar Bilal" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
         <div class="profile-placeholder" style="display:none;">
           <span style="font-size:3rem;">👤</span>
@@ -662,8 +700,8 @@
       <div class="status-badge">
         <div class="status-dot"></div>
         <div class="status-text">
-          <strong>Available for Work</strong>
-          Remote · Contract
+          <strong>Open to Opportunities</strong>
+          Full-time · Relocating to the US
         </div>
       </div>
     </div>
@@ -674,22 +712,22 @@
 <div class="ticker-wrap">
   <div class="ticker">
     <span class="ticker-item">Computer Vision</span>
-    <span class="ticker-item">MLOps Pipelines</span>
-    <span class="ticker-item">Edge Deployment</span>
-    <span class="ticker-item">CUDA Acceleration</span>
-    <span class="ticker-item">Distributed Systems</span>
-    <span class="ticker-item">Full-Stack Dev</span>
-    <span class="ticker-item">AWS · Azure ML</span>
-    <span class="ticker-item">Real-Time AI</span>
+    <span class="ticker-item">Multi-Camera Tracking</span>
+    <span class="ticker-item">TensorRT</span>
+    <span class="ticker-item">CUDA Kernels</span>
+    <span class="ticker-item">NVIDIA Jetson</span>
+    <span class="ticker-item">Edge AI</span>
+    <span class="ticker-item">LLM · RAG · Agents</span>
+    <span class="ticker-item">AWS · Docker</span>
     <!-- duplicate for seamless loop -->
     <span class="ticker-item">Computer Vision</span>
-    <span class="ticker-item">MLOps Pipelines</span>
-    <span class="ticker-item">Edge Deployment</span>
-    <span class="ticker-item">CUDA Acceleration</span>
-    <span class="ticker-item">Distributed Systems</span>
-    <span class="ticker-item">Full-Stack Dev</span>
-    <span class="ticker-item">AWS · Azure ML</span>
-    <span class="ticker-item">Real-Time AI</span>
+    <span class="ticker-item">Multi-Camera Tracking</span>
+    <span class="ticker-item">TensorRT</span>
+    <span class="ticker-item">CUDA Kernels</span>
+    <span class="ticker-item">NVIDIA Jetson</span>
+    <span class="ticker-item">Edge AI</span>
+    <span class="ticker-item">LLM · RAG · Agents</span>
+    <span class="ticker-item">AWS · Docker</span>
   </div>
 </div>
 
@@ -708,28 +746,28 @@
       <div class="about-content">
         <div class="section-header reveal">
           <div class="section-tag">About Me</div>
-          <h2 class="section-title">Where Code<br>Meets <span style="color:var(--accent)">Intelligence</span></h2>
+          <h2 class="section-title">Where Code<br>Meets <span style="color:var(--accent)">Reality</span></h2>
         </div>
         <p class="about-intro reveal reveal-delay-1">
-          I'm a <strong>Computer Science student at FAST NUCES</strong> and Part-Time AI Engineer at <strong>SOVAvis</strong>, obsessed with building systems that are not just intelligent — but <strong>blindingly fast and production-ready</strong>. From optimizing neural networks with CUDA to shipping MLOps pipelines on AWS, I bridge research and reality.
+          I'm an <strong>AI / Computer Vision Engineer at SovaVis</strong> and a <strong>2026 Computer Science graduate of FAST NUCES</strong>. I like the unglamorous part of AI: taking a model that works in a notebook and making it <strong>fast, reliable and cheap enough to run in the real world</strong>, whether that is a GPU server, an AWS cluster or a board the size of my hand.
         </p>
         <p class="about-intro reveal reveal-delay-2" style="margin-top:-1rem;">
-          I earned the <strong>Dean's Honor List</strong> in my 7th semester, and I bring that same precision to every line of code I write for clients.
+          I earned the <strong>Dean's Honor List</strong> in my 7th semester. I'm looking for full-time computer vision, edge AI or ML infrastructure roles, and I'm <strong>open to relocating to the US</strong>.
         </p>
         <div class="skills-grid reveal reveal-delay-2">
-          <div class="skill-chip">PyTorch & TensorFlow</div>
-          <div class="skill-chip">YOLO · R-CNN · DeepSORT</div>
-          <div class="skill-chip">CUDA C++ · TensorRT</div>
-          <div class="skill-chip">Docker · Kubernetes</div>
-          <div class="skill-chip">AWS EC2 · Azure ML</div>
-          <div class="skill-chip">FastAPI · PostgreSQL</div>
-          <div class="skill-chip">MPI · OpenMP · OpenCL</div>
-          <div class="skill-chip">React · Node.js · MongoDB</div>
+          <div class="skill-chip">YOLO · ByteTrack · Re-ID</div>
+          <div class="skill-chip">TensorRT · ONNX Runtime</div>
+          <div class="skill-chip">CUDA C++ · Custom Kernels</div>
+          <div class="skill-chip">NVIDIA Jetson · GPIO</div>
+          <div class="skill-chip">PyTorch · OpenCV</div>
+          <div class="skill-chip">LangChain · RAG · Agents</div>
+          <div class="skill-chip">AWS · Docker · Kubernetes</div>
+          <div class="skill-chip">FastAPI · PostgreSQL · Next.js</div>
         </div>
         <div class="achievement-card reveal reveal-delay-3">
           <div class="ach-icon">🏆</div>
           <div>
-            <div class="ach-title">Dean's Honor List — Semester 7</div>
+            <div class="ach-title">Dean's Honor List · Semester 7</div>
             <div class="ach-sub">Academic Excellence Award · FAST-NUCES Islamabad</div>
           </div>
         </div>
@@ -738,108 +776,55 @@
   </div>
 </section>
 
-<!-- ── SERVICES ── -->
-<section id="services">
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
   <div class="section-wrap">
     <div class="section-header reveal">
-      <div class="section-tag">What I Offer</div>
-      <h2 class="section-title">Services Built<br>for <span style="color:var(--accent2)">Real Business</span> Impact</h2>
+      <div class="section-tag">Experience</div>
+      <h2 class="section-title">Where I've<br><span style="color:var(--accent2)">Shipped</span></h2>
     </div>
-    <div class="services-grid">
 
-      <div class="service-card reveal">
-        <div class="service-num">01</div>
-        <div class="service-icon">👁️</div>
-        <div class="service-name">Computer Vision Solutions</div>
-        <p class="service-desc">
-          End-to-end CV pipelines for real-time object detection, tracking, and segmentation. Deployed on cloud (AWS EC2) or edge devices (Jetson Nano, Raspberry Pi) — achieving 45+ FPS with TensorRT-optimized models. Whether it's smart retail, security, or industrial automation, I build systems that see and react in real time.
-        </p>
-        <div class="service-tags">
-          <span class="service-tag">YOLOv8</span>
-          <span class="service-tag">DeepSORT</span>
-          <span class="service-tag">TensorRT</span>
-          <span class="service-tag">OpenCV</span>
-          <span class="service-tag">ONNX</span>
+    <div class="exp-card reveal">
+      <div>
+        <div class="exp-date">Dec 2025 → Present</div>
+        <div class="exp-place">Islamabad, Pakistan</div>
+      </div>
+      <div>
+        <div class="exp-role">AI / Computer Vision Engineer</div>
+        <div class="exp-company">SovaVis</div>
+        <ul class="exp-list">
+          <li>Built <strong>AwareCam</strong>, a video analytics platform running <strong>10 to 12 concurrent RTSP feeds on one GPU at 100+ FPS</strong> with under 100 ms latency and zone- and schedule-aware alerts.</li>
+          <li>Engineered <strong>LotIQ</strong>, a multi-tenant AWS parking-violation SaaS with <strong>cross-camera vehicle re-identification</strong> and an automated towing workflow. Its GPU pipeline idles at 1 FPS and scales to 8 FPS only when a candidate violation appears.</li>
+          <li>Built an <strong>offline face-recognition door access system</strong> for a client in Dubai on NVIDIA Jetson Orin Nano, driving relay-actuated locks over GPIO.</li>
+          <li>Shipped <strong>Taziza</strong>, a smart-fridge checkout that bills in real time from line-crossing across two cameras, then rebuilt it in <strong>TensorRT</strong> to restore real-time throughput.</li>
+          <li>Optimized models with TensorRT (FP16/INT8) and ONNX Runtime, and deployed inference services with Docker, FastAPI, PostgreSQL, AWS and CI/CD (GitHub Actions, MLflow).</li>
+        </ul>
+        <div class="project-stack">
+            <span class="stack-badge">YOLO11</span>
+            <span class="stack-badge">ByteTrack</span>
+            <span class="stack-badge">OSNet</span>
+            <span class="stack-badge">TensorRT</span>
+            <span class="stack-badge">Jetson Orin</span>
+            <span class="stack-badge">AWS</span>
+            <span class="stack-badge">FastAPI</span>
+            <span class="stack-badge">Docker</span>
         </div>
       </div>
+    </div>
 
-      <div class="service-card reveal reveal-delay-1">
-        <div class="service-num">02</div>
-        <div class="service-icon">⚙️</div>
-        <div class="service-name">MLOps & AI Infrastructure</div>
-        <p class="service-desc">
-          Production ML is more than a model — it's the pipeline around it. I architect automated training, versioning, and deployment workflows using Docker, Kubernetes, MLflow, Airflow, and GitHub Actions. Your models go from notebook to production with zero downtime, full observability, and CI/CD built in.
-        </p>
-        <div class="service-tags">
-          <span class="service-tag">Docker</span>
-          <span class="service-tag">Kubernetes</span>
-          <span class="service-tag">MLflow</span>
-          <span class="service-tag">Airflow</span>
-          <span class="service-tag">AWS · Azure</span>
-        </div>
+    <div class="exp-card reveal">
+      <div>
+        <div class="exp-date">Aug 2022 → Jun 2026</div>
+        <div class="exp-place">Islamabad, Pakistan</div>
       </div>
-
-      <div class="service-card reveal reveal-delay-2">
-        <div class="service-num">03</div>
-        <div class="service-icon">🚀</div>
-        <div class="service-name">High-Performance AI Systems</div>
-        <p class="service-desc">
-          When milliseconds matter, I go deep: custom CUDA kernels, multi-GPU training, MPI/OpenMP distributed computing, and OpenCL acceleration. I've delivered 12× speedups on neural network tasks and reduced bioinformatics computation from hours to minutes. I make your AI fast enough to compete at scale.
-        </p>
-        <div class="service-tags">
-          <span class="service-tag">CUDA C++</span>
-          <span class="service-tag">MPI</span>
-          <span class="service-tag">OpenMP</span>
-          <span class="service-tag">TensorRT</span>
-          <span class="service-tag">Numba</span>
-        </div>
+      <div>
+        <div class="exp-role">BS Computer Science</div>
+        <div class="exp-company">FAST NUCES</div>
+        <ul class="exp-list">
+          <li><strong>Dean's Honor List</strong> in Semester 7 for academic excellence.</li>
+          <li>Coursework: Deep Learning, MLOps, Generative AI &amp; LLMs, Artificial Intelligence, Data Structures, Operating Systems.</li>
+        </ul>
       </div>
-
-      <div class="service-card reveal reveal-delay-1">
-        <div class="service-num">04</div>
-        <div class="service-icon">🌐</div>
-        <div class="service-name">Full-Stack Web Applications</div>
-        <p class="service-desc">
-          Need an AI-powered dashboard, admin panel, or SaaS product? I build complete MERN stack applications with JWT auth, real-time features via Socket.io, and clean RESTful APIs. Responsive, optimized, and integrated with your AI backend — delivering 40% faster load times and scalable architecture.
-        </p>
-        <div class="service-tags">
-          <span class="service-tag">React</span>
-          <span class="service-tag">Node.js</span>
-          <span class="service-tag">MongoDB</span>
-          <span class="service-tag">FastAPI</span>
-          <span class="service-tag">PostgreSQL</span>
-        </div>
-      </div>
-
-      <div class="service-card reveal reveal-delay-2">
-        <div class="service-num">05</div>
-        <div class="service-icon">📊</div>
-        <div class="service-name">Edge AI Deployment</div>
-        <p class="service-desc">
-          Deploying intelligence to the edge — where cloud latency is not an option. I optimize and deploy deep learning models on Jetson Nano and Raspberry Pi using TensorRT and ONNX Runtime, achieving up to 3× speedup with maintained accuracy. Perfect for IoT, robotics, and smart hardware products.
-        </p>
-        <div class="service-tags">
-          <span class="service-tag">Jetson Nano</span>
-          <span class="service-tag">Raspberry Pi</span>
-          <span class="service-tag">ONNX Runtime</span>
-          <span class="service-tag">TensorRT</span>
-        </div>
-      </div>
-
-      <div class="service-card reveal reveal-delay-3">
-        <div class="service-num">06</div>
-        <div class="service-icon">🔬</div>
-        <div class="service-name">AI Consulting & Prototyping</div>
-        <p class="service-desc">
-          Not sure which AI approach fits your problem? I'll analyze your use case, recommend the right stack, and deliver a working prototype fast. From scoping to PoC, I help startups and businesses make smart AI decisions without burning budget on the wrong architecture.
-        </p>
-        <div class="service-tags">
-          <span class="service-tag">Architecture Design</span>
-          <span class="service-tag">PoC</span>
-          <span class="service-tag">Rapid Prototyping</span>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -849,60 +834,182 @@
   <div class="section-wrap">
     <div class="section-header reveal">
       <div class="section-tag">Featured Work</div>
-      <h2 class="section-title">Projects That<br><span style="color:var(--accent3)">Ship & Perform</span></h2>
+      <h2 class="section-title">Projects That<br><span style="color:var(--accent3)">Ship &amp; Perform</span></h2>
     </div>
     <div class="projects-list">
 
       <div class="project-row reveal">
         <div class="project-num">01</div>
         <div>
-          <div class="project-name">Real-Time Object Detection & Tracking Pipeline</div>
-          <div class="project-objective">Objective: Production CV system for smart retail, sports analytics & security — deployed at scale on GPU cloud and edge hardware.</div>
-          <p class="project-desc">Built an end-to-end computer vision pipeline using YOLOv8 + DeepSORT with TensorRT optimization. Deployed containerized inference service on AWS EC2 with GPU support processing 30+ FPS on live video. Edge deployment on Jetson Nano hits 45+ FPS for applications including sports highlights generation and smart fridge auto-billing with 95% product recognition accuracy.</p>
+          <div class="project-name">AwareCam: Multi-Stream Video Analytics</div>
+          <div class="project-objective">Objective: watch a dozen live cameras on one GPU and alert only on what matters.</div>
+          <p class="project-desc">A video analytics platform that ingests 10 to 12 concurrent RTSP feeds on a single GPU at 100+ FPS with under 100 ms latency. Zone- and schedule-aware agents decide what counts as an event, and license plates are read with ALPR.</p>
           <div class="project-stack">
-            <span class="stack-badge">PyTorch</span>
-            <span class="stack-badge">YOLOv8</span>
-            <span class="stack-badge">DeepSORT</span>
+            <span class="stack-badge">YOLO11</span>
             <span class="stack-badge">TensorRT</span>
-            <span class="stack-badge">AWS EC2</span>
+            <span class="stack-badge">ByteTrack</span>
+            <span class="stack-badge">ALPR</span>
+            <span class="stack-badge">RTSP</span>
             <span class="stack-badge">Docker</span>
           </div>
         </div>
         <div class="project-metric">
-          <div class="metric-val">45+</div>
-          <div class="metric-label">FPS on Edge</div>
+          <div class="metric-val">100+</div>
+          <div class="metric-label">FPS on one GPU</div>
           <div style="margin-top:1.5rem">
-            <div class="metric-val" style="font-size:2rem">95%</div>
-            <div class="metric-label">Recognition Accuracy</div>
+            <div class="metric-val" style="font-size:2rem">&lt;100ms</div>
+            <div class="metric-label">End-to-end latency</div>
           </div>
         </div>
       </div>
-
       <div class="project-row reveal">
         <div class="project-num">02</div>
         <div>
-          <div class="project-name">Neural Network Acceleration using CUDA</div>
-          <div class="project-objective">Objective: Eliminate GPU bottlenecks in deep learning workflows with custom low-level CUDA kernels and multi-GPU training.</div>
-          <p class="project-desc">Accelerated MNIST classification achieving a 12× speedup by writing custom CUDA kernels for matrix operations and convolutions. Implemented a multi-GPU training pipeline using CUDA streams and unified memory for distributed deep learning workloads — opening the door to training at research scale on commodity hardware.</p>
+          <div class="project-name">LotIQ: Multi-Camera Parking Enforcement SaaS</div>
+          <div class="project-objective">Objective: catch parking violations across many cameras and run the towing workflow end to end, without burning GPU budget.</div>
+          <p class="project-desc">A multi-tenant AWS platform that follows one vehicle across overlapping cameras with appearance-based re-identification, reads plates, and drives the full towing workflow. A two-stage GPU pipeline idles at 1 FPS and scales to 8 FPS only when a candidate violation appears.</p>
+          <div class="project-stack">
+            <span class="stack-badge">YOLOv8</span>
+            <span class="stack-badge">ByteTrack</span>
+            <span class="stack-badge">OSNet Re-ID</span>
+            <span class="stack-badge">TensorRT</span>
+            <span class="stack-badge">AWS Lambda · ECS · SQS</span>
+            <span class="stack-badge">FastAPI</span>
+            <span class="stack-badge">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="project-metric">
+          <div class="metric-val">1→8</div>
+          <div class="metric-label">Adaptive FPS per camera</div>
+        </div>
+      </div>
+      <div class="project-row reveal">
+        <div class="project-num">03</div>
+        <div>
+          <div class="project-name">Edge AI Door Access on NVIDIA Jetson</div>
+          <div class="project-objective">Objective: open a door for the right person with no keys, no cards and no cloud.</div>
+          <p class="project-desc">Built for a client in Dubai. An NVIDIA Jetson Orin Nano runs face recognition on the device and drives relay-actuated locks over GPIO, so the camera's decision becomes a lock you can hear click. The whole system runs offline on a board smaller than a hand.</p>
+          <div class="project-stack">
+            <span class="stack-badge">Jetson Orin Nano</span>
+            <span class="stack-badge">Face Recognition</span>
+            <span class="stack-badge">OpenCV</span>
+            <span class="stack-badge">GPIO</span>
+            <span class="stack-badge">Relays</span>
+            <span class="stack-badge">Python</span>
+          </div>
+        </div>
+        <div class="project-metric">
+          <div class="metric-val">0</div>
+          <div class="metric-label">Cloud calls, fully offline</div>
+        </div>
+      </div>
+      <div class="project-row reveal">
+        <div class="project-num">04</div>
+        <div>
+          <div class="project-name">Taziza: Grab-and-Go Smart Fridge Checkout</div>
+          <div class="project-objective">Objective: charge customers automatically for what they take out of a fridge, and refund what they put back.</div>
+          <p class="project-desc">Real-time product detection and line-crossing logic across two cameras bills items as they leave the fridge and refunds returns automatically. A QR sub-system tells look-alike products apart, and I rebuilt the pipeline in TensorRT to clear a decode bottleneck and restore real-time throughput.</p>
+          <div class="project-stack">
+            <span class="stack-badge">YOLO</span>
+            <span class="stack-badge">ByteTrack</span>
+            <span class="stack-badge">EasyOCR / QR</span>
+            <span class="stack-badge">TensorRT</span>
+            <span class="stack-badge">OpenCV</span>
+          </div>
+        </div>
+        <div class="project-metric">
+          <div class="metric-val">2</div>
+          <div class="metric-label">Synced cameras, live billing</div>
+        </div>
+      </div>
+      <div class="project-row reveal">
+        <div class="project-num">05</div>
+        <div>
+          <div class="project-name">Neural Network Acceleration with CUDA</div>
+          <div class="project-objective">Objective: remove GPU bottlenecks with low-level CUDA kernels and multi-GPU training.</div>
+          <p class="project-desc">Took an MNIST classifier to a 12× speedup with no accuracy loss by writing custom CUDA kernels for matrix operations and convolutions and adding an ONNX-to-TensorRT export path. Built a multi-GPU training pipeline on CUDA streams and unified memory.</p>
           <div class="project-stack">
             <span class="stack-badge">CUDA C++</span>
-            <span class="stack-badge">TensorFlow</span>
+            <span class="stack-badge">TensorRT</span>
+            <span class="stack-badge">ONNX</span>
             <span class="stack-badge">OpenACC</span>
             <span class="stack-badge">Multi-GPU</span>
           </div>
         </div>
         <div class="project-metric">
           <div class="metric-val">12×</div>
-          <div class="metric-label">Speedup Achieved</div>
+          <div class="metric-label">Speedup achieved</div>
         </div>
       </div>
-
       <div class="project-row reveal">
-        <div class="project-num">03</div>
+        <div class="project-num">06</div>
         <div>
-          <div class="project-name">Distributed Graph Processing with MPI & OpenMP</div>
-          <div class="project-objective">Objective: Scale complex graph algorithms for bioinformatics and network analysis using hybrid HPC parallelism.</div>
-          <p class="project-desc">Parallelized a dynamic Shortest Shortest Path (SSSP) algorithm using a hybrid MPI-OpenMP approach, delivering 8× speedup on a 16-core cluster. Applied the same framework to protein sequence alignment for bioinformatics applications — reducing computation time from hours down to minutes. Strategy involved workload partitioning across MPI ranks with thread-level OpenMP parallelism within nodes.</p>
+          <div class="project-name">RAG + Agentic Detection System</div>
+          <div class="project-objective">Objective: let people ask, in plain language, what the cameras are seeing.</div>
+          <p class="project-desc">A RAG pipeline fused with a YOLOv8 and DeepSORT vision back end. An LLM agent queries live detections through tool-calling, raises alerts and writes summaries, served behind a JWT-authenticated FastAPI on GPU-backed AWS EC2.</p>
+          <div class="project-stack">
+            <span class="stack-badge">LangChain</span>
+            <span class="stack-badge">FAISS</span>
+            <span class="stack-badge">OpenAI</span>
+            <span class="stack-badge">YOLOv8</span>
+            <span class="stack-badge">DeepSORT</span>
+            <span class="stack-badge">FastAPI</span>
+            <span class="stack-badge">AWS EC2</span>
+          </div>
+        </div>
+        <div class="project-metric">
+          <div class="metric-val">95%</div>
+          <div class="metric-label">Recognition accuracy</div>
+          <div style="margin-top:1.5rem">
+            <div class="metric-val" style="font-size:2rem">45+</div>
+            <div class="metric-label">FPS</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-row reveal">
+        <div class="project-num">07</div>
+        <div>
+          <div class="project-name">Rubric.ai: AI Exam Evaluation Platform</div>
+          <div class="project-objective">Objective: grade handwritten and MCQ answers instantly for competitive-exam students.</div>
+          <p class="project-desc">A live EdTech SaaS that scans answers, runs OCR, then LLM evaluation, and returns structured feedback in seconds. Launched to 200+ users in its first week, with paying users active.</p>
+          <div class="project-stack">
+            <span class="stack-badge">Next.js</span>
+            <span class="stack-badge">React</span>
+            <span class="stack-badge">OpenAI</span>
+            <span class="stack-badge">OCR</span>
+            <span class="stack-badge">Node.js</span>
+          </div>
+        </div>
+        <div class="project-metric">
+          <div class="metric-val">200+</div>
+          <div class="metric-label">Users in week one</div>
+        </div>
+      </div>
+      <div class="project-row reveal">
+        <div class="project-num">08</div>
+        <div>
+          <div class="project-name">Realistic Logo Compositor</div>
+          <div class="project-objective">Objective: make a logo look physically printed on a real surface in a photo.</div>
+          <p class="project-desc">Classical computer vision end to end: a homography warp for perspective, depth-guided shading for lighting, and Poisson seam blending, so the logo respects perspective, light and occlusion. Built as a paid take-home with a full design rationale.</p>
+          <div class="project-stack">
+            <span class="stack-badge">OpenCV</span>
+            <span class="stack-badge">Homography</span>
+            <span class="stack-badge">Depth Estimation</span>
+            <span class="stack-badge">Poisson Blending</span>
+            <span class="stack-badge">FastAPI</span>
+          </div>
+        </div>
+        <div class="project-metric">
+          <div class="metric-val">3</div>
+          <div class="metric-label">Perspective · light · occlusion</div>
+        </div>
+      </div>
+      <div class="project-row reveal">
+        <div class="project-num">09</div>
+        <div>
+          <div class="project-name">Distributed Graph Processing with MPI &amp; OpenMP</div>
+          <div class="project-objective">Objective: scale graph algorithms for bioinformatics and network analysis with hybrid HPC parallelism.</div>
+          <p class="project-desc">Parallelized a dynamic single-source shortest path (SSSP) algorithm with a hybrid MPI and OpenMP design for an 8× speedup on a 16-core cluster, then applied the same approach to protein sequence alignment, cutting runtime from hours to minutes.</p>
           <div class="project-stack">
             <span class="stack-badge">C++</span>
             <span class="stack-badge">MPI</span>
@@ -912,27 +1019,96 @@
         </div>
         <div class="project-metric">
           <div class="metric-val">8×</div>
-          <div class="metric-label">Cluster Speedup</div>
+          <div class="metric-label">Cluster speedup</div>
         </div>
       </div>
 
-      <div class="project-row reveal">
-        <div class="project-num">04</div>
-        <div>
-          <div class="project-name">Kreator Konnect: Full-Stack Collaboration Platform</div>
-          <div class="project-objective">Objective: A production MERN stack SaaS platform connecting creators with real-time collaboration, matching, and communication tools.</div>
-          <p class="project-desc">Developed a complete MERN stack web application featuring JWT authentication, real-time chat via Socket.io, and a clean RESTful API architecture. Implemented responsive Material-UI with database query optimizations that reduced page load time by 40%. The platform supports creator profiles, project collaboration, and real-time notifications at scale.</p>
-          <div class="project-stack">
-            <span class="stack-badge">React</span>
-            <span class="stack-badge">Node.js</span>
-            <span class="stack-badge">MongoDB</span>
-            <span class="stack-badge">Socket.io</span>
-            <span class="stack-badge">JWT</span>
-          </div>
+    </div>
+    <p class="reveal" style="margin-top:2rem; font-family:'DM Mono',monospace; font-size:.72rem; color:var(--muted);">Most of this is client or company work in private repositories. Happy to walk through architecture and code on a call.</p>
+  </div>
+</section>
+
+<!-- ── CAPABILITIES ── -->
+<section id="capabilities">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-tag">What I Do</div>
+      <h2 class="section-title">Built for<br><span style="color:var(--accent2)">Production</span>, Not Demos</h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-num">01</div>
+        <div class="service-icon">👁️</div>
+        <div class="service-name">Real-Time Computer Vision</div>
+        <p class="service-desc">Detection, tracking, re-identification and multi-camera analytics on live RTSP streams, from smart retail to parking enforcement and access control.</p>
+        <div class="service-tags">
+          <span class="service-tag">YOLO11</span>
+          <span class="service-tag">ByteTrack</span>
+          <span class="service-tag">OSNet</span>
+          <span class="service-tag">OpenCV</span>
+          <span class="service-tag">ALPR</span>
         </div>
-        <div class="project-metric">
-          <div class="metric-val">40%</div>
-          <div class="metric-label">Faster Load Times</div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-num">02</div>
+        <div class="service-icon">🚀</div>
+        <div class="service-name">Inference Optimization &amp; GPU</div>
+        <p class="service-desc">Making models fast enough to ship: TensorRT FP16/INT8, ONNX Runtime, custom CUDA kernels and CUDA streams. A 12× speedup with no accuracy loss on my own benchmark.</p>
+        <div class="service-tags">
+          <span class="service-tag">TensorRT</span>
+          <span class="service-tag">CUDA C++</span>
+          <span class="service-tag">ONNX</span>
+          <span class="service-tag">Quantization</span>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-num">03</div>
+        <div class="service-icon">🔌</div>
+        <div class="service-name">Edge AI on NVIDIA Jetson</div>
+        <p class="service-desc">On-device models wired into the physical world: cameras in, GPIO and relays out, running offline on boards the size of a hand.</p>
+        <div class="service-tags">
+          <span class="service-tag">Jetson Orin</span>
+          <span class="service-tag">GPIO</span>
+          <span class="service-tag">GStreamer</span>
+          <span class="service-tag">RTSP</span>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-num">04</div>
+        <div class="service-icon">🧠</div>
+        <div class="service-name">LLM, RAG &amp; Agents</div>
+        <p class="service-desc">Retrieval pipelines and tool-calling agents that work over live data, served behind real authenticated APIs rather than notebooks.</p>
+        <div class="service-tags">
+          <span class="service-tag">LangChain</span>
+          <span class="service-tag">LangGraph</span>
+          <span class="service-tag">FAISS</span>
+          <span class="service-tag">OpenAI</span>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-num">05</div>
+        <div class="service-icon">⚙️</div>
+        <div class="service-name">MLOps &amp; Cloud</div>
+        <p class="service-desc">Containerized inference on AWS with CI/CD and cost-aware GPU pipelines that scale up only when there is something worth looking at.</p>
+        <div class="service-tags">
+          <span class="service-tag">Docker</span>
+          <span class="service-tag">Kubernetes</span>
+          <span class="service-tag">AWS</span>
+          <span class="service-tag">MLflow</span>
+          <span class="service-tag">GitHub Actions</span>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-num">06</div>
+        <div class="service-icon">🌐</div>
+        <div class="service-name">Full-Stack Products</div>
+        <p class="service-desc">Next.js and React front ends on FastAPI or Node back ends, including a launched SaaS with paying users.</p>
+        <div class="service-tags">
+          <span class="service-tag">Next.js</span>
+          <span class="service-tag">React</span>
+          <span class="service-tag">FastAPI</span>
+          <span class="service-tag">PostgreSQL</span>
         </div>
       </div>
 
@@ -951,7 +1127,7 @@
         <span style="color:var(--accent)">Remarkable.</span>
       </h2>
       <p class="contact-sub reveal reveal-delay-1">
-        Whether you need a production CV system, an MLOps overhaul, or a blazing-fast AI backend — I'm ready to talk. Let's turn your ideas into intelligent, scalable products.
+        Hiring for computer vision, edge AI or ML infrastructure? I'm open to full-time roles and to relocating to the US. Send me a note and I'll reply quickly.
       </p>
       <div class="contact-cards reveal reveal-delay-2">
         <a href="mailto:azfarbilal2004@gmail.com" class="contact-card">
@@ -964,16 +1140,19 @@
           <div class="cc-label">Phone / WhatsApp</div>
           <div class="cc-value">+92 332 094 7112</div>
         </a>
-        <a href="https://github.com/Azfar-950" target="_blank" class="contact-card">
+        <a href="https://github.com/Azfar-950" target="_blank" rel="noopener" class="contact-card">
           <div class="cc-icon">🐙</div>
           <div class="cc-label">GitHub</div>
           <div class="cc-value">github.com/Azfar-950</div>
         </a>
       </div>
-      <div class="reveal reveal-delay-3">
+      <div class="reveal reveal-delay-3" style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
         <a href="mailto:azfarbilal2004@gmail.com" class="btn-primary" style="display:inline-flex; font-size:1rem; padding:1rem 2.5rem;">
           <span>Send Me a Message</span>
           <span>→</span>
+        </a>
+        <a href="Azfar_Bilal_Resume.pdf" target="_blank" rel="noopener" class="btn-outline" style="display:inline-flex; font-size:1rem; padding:1rem 2.5rem;">
+          <span>Download Résumé</span>
         </a>
       </div>
     </div>
@@ -984,7 +1163,7 @@
 
 <!-- ── FOOTER ── -->
 <footer>
-  <div class="footer-copy">© 2025 Azfar Bilal · Islamabad, Pakistan</div>
+  <div class="footer-copy">© 2026 Azfar Bilal · Islamabad, Pakistan</div>
   <div class="footer-made">Built with <span>◆</span> precision and passion</div>
 </footer>
 
